@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #area{
+            background-color: #476a13;
+            color: azure;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+        interaja..
+
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', sair)
+
+
+        function clicar() {
+            a.innerText='clicou'
+            a.style.background = 'red'
+            a.style.fontSize = '2.5em'
+        }
+        function entrar(){
+            a.innerText='entrou'
+        }
+        function saiu(){
+            a.innerText='saiu'
+            a.style.background = '#476a13'
+            a.style.fontSize = '2em'
+        }
+    </script>
+</body>
+</html>
