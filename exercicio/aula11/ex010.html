@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação</title>
+</head>
+<body>
+    <h1>Verificação de cidadania</h1>
+    Qual pais que você reside atualmente? <br><input type="text" name="txtcid" id="txtcid">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+
+        function verificar() {
+
+            var pais = document.getElementById('txtcid')
+            var res = document.getElementById('res')
+            var pais = String(txtcid.value).toLowerCase()
+
+            res.innerHTML = `<p>Vivendo em <strong>${pais}</strong></p>`
+
+            if (pais == 'brasil') {
+
+                res.innerHTML += `Você é Brasileiro!`
+
+            } else {
+
+                res.innerHTML += `Você é estrangeiro!` 
+
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
