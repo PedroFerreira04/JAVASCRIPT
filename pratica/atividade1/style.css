@@ -1,7 +1,8 @@
 body{
     background-color: rgb(62, 62, 135);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
+    transition: background-color 0.5s ease;
 
 }
 
@@ -25,4 +26,28 @@ section {
 footer{
     color: aliceblue;
     font: italic;
+}
+
+#msg{
+    padding: 20px;
+}
+
+#imagem {
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#imagem:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+#msg{
+    font-size: 1.2em;
+}
+
+#tooltip {
+    pointer-events: none; /* Para não interferir no mouse */
+    z-index: 1000;
 }
