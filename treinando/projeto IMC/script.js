@@ -6,7 +6,7 @@ function Clicar() {
     var imc = peso.value/(altu.value * altu.value)
 
     if(peso.value == '' || altu.value == "" ){
-        window.alert("ERRO")
+        window.alert("[ERRO] Insira valor aos campos [ERRO]")
     } else {
         var imc = Number(peso.value/(altu.value * altu.value))
         var clas = ''
