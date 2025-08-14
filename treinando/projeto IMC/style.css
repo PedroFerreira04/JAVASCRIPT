@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(31, 30, 30);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#content{
+    flex-direction: column;
+    background-color: rgb(55, 53, 53);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+#titulo{
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 198, 0);
+    text-underline-offset: 10px;
+}
+
+p{
+    font-size: 0.7em;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    text-align: left;
+}
+
+#peso{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(74, 71, 71);
+    outline: none;
+    color: aliceblue;
+    border: 2px solid rgb(74, 71, 71);
+}
+
+#altu{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(74, 71, 71);
+    outline: none;
+    color: aliceblue;
+    border: 2px solid rgb(74, 71, 71);
+
+}
+
+#botao{
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(0, 198, 0);
+    border: 2px solid rgb(0, 198, 0);
+    color: aliceblue;
+    font-size: 1.1em;
+
+
+}
+
+#botao:hover{
+    background-color: rgb(4, 93, 4);
+    border: 2px solid rgb(4, 93, 4); 
+    color: rgb(136, 142, 148);   
+    cursor: pointer;
+
+}
+
+#res{
+    padding: 30px;
+}
