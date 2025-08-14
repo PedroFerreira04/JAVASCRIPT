@@ -78,3 +78,33 @@ p{
 #res{
     padding: 30px;
 }
+
+a{
+    color: rgb(0, 198, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(4, 93, 4);
+    text-decoration: underline;
+    text-decoration-color: rgb(4, 93, 4);
+    font-size: 1.11em;
+}
+
+.valor-imcruim {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(211, 8, 8);
+}
+
+.valor-imcbom {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(0, 198, 0);
+
+}
+
+.texto-imc {
+    font-size: 1em;
+    margin-top: 5px;
+}
